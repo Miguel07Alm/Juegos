@@ -161,10 +161,10 @@ class EscenaNivel(Escena):
         if self.bolita.rect.top > height:
             self.vidas -= 1
             self.esperando_saque = True
-        if self.puntuacion == 0:
+        if self.puntuacion == 200:
             #Escenas de niveles 2,3,4...
             pygame.mixer.music.stop()
-            self.cambiar_escena('Nivel3')
+            self.cambiar_escena('Nivel2')
             #self.cambiar_escena('JuegoGanado')
     def dibujar(self, pantalla):
         pantalla.fill(color_negro)
